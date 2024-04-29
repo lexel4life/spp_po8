@@ -1,8 +1,8 @@
-﻿int n = Convert.ToInt32(args[0]);
+﻿int n = args.Length;
 int[] arr = new int[n];
 for (int i = 0; i < n; i++)
 {
-    arr[i] = Convert.ToInt32(args[i + 1]);
+    arr[i] = Convert.ToInt32(args[i]);
 }
 Array.Sort(arr);
 if (n % 2 != 0)
